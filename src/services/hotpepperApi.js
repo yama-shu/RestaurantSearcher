@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5001/api';
+const API_BASE_URL = 'https://gourmetfinder.vercel.app/';
 
 export const fetchRestaurants = async (lat, lng, keyword = '', range = 3) => {
   try {
