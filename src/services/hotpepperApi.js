@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://gourmetfinder.vercel.app/';
+// 環境変数からAPIのベースURLを取得（本番環境とローカルで自動切り替え）
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001/api';
 
 export const fetchRestaurants = async (lat, lng, keyword = '', range = 3) => {
   try {
