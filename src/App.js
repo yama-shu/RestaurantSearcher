@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="app-container">
       {/* ✅ アプリのタイトル */}
-      <h1 className="app-title">レストラン検索アプリ</h1>
+      <h1 className="app-title">グルメFinder</h1>
 
       {/* ✅ 検索フォーム（位置情報とキーワードでレストランを検索） */}
       <SearchForm onSearch={handleSearch} />
