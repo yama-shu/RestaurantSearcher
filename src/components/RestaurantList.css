@@ -1,0 +1,50 @@
+/* src/components/RestaurantList.css */
+
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2列のグリッド */
+    gap: 20px; /* カード間の隙間 */
+    padding: 20px;
+  }
+  
+  .restaurant-card {
+    background-image: url('../img/white_1.jpg'); 
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .restaurant-card:hover {
+    transform: scale(1.03); /* ホバー時に少し拡大 */
+    background-color: #f9fafb; /* ホバー時の背景色 */
+  }
+  
+  .restaurant-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 8px;
+  }
+  
+  .restaurant-access {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-bottom: 10px;
+  }
+  
+  .restaurant-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .restaurant-list {
+      grid-template-columns: 1fr; /* モバイルでは1列表示 */
+    }
+  }
+  
