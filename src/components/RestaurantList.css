@@ -1,5 +1,3 @@
-/* src/components/RestaurantList.css */
-
 .restaurant-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 2列のグリッド */
